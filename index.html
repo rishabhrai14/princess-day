@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For the Princess — from a friend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="sun-glow" aria-hidden="true"></div>
+
+  <!-- Login -->
+  <section id="gate" class="gate" aria-label="Login">
+    <div class="gate-card">
+      <div class="gate-sunflower" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="88" height="88">
+          <circle cx="60" cy="60" r="18" fill="#F2B705"/>
+          <g fill="#F4C430">
+            <ellipse cx="60" cy="22" rx="10" ry="18"/>
+            <ellipse cx="60" cy="98" rx="10" ry="18"/>
+            <ellipse cx="22" cy="60" rx="18" ry="10"/>
+            <ellipse cx="98" cy="60" rx="18" ry="10"/>
+            <ellipse cx="33" cy="33" rx="10" ry="18" transform="rotate(-45 33 33)"/>
+            <ellipse cx="87" cy="87" rx="10" ry="18" transform="rotate(-45 87 87)"/>
+            <ellipse cx="87" cy="33" rx="10" ry="18" transform="rotate(45 87 33)"/>
+            <ellipse cx="33" cy="87" rx="10" ry="18" transform="rotate(45 33 87)"/>
+          </g>
+          <circle cx="60" cy="60" r="14" fill="#5C3A1E"/>
+          <circle cx="55" cy="56" r="2" fill="#3D2412"/>
+          <circle cx="65" cy="56" r="2" fill="#3D2412"/>
+          <circle cx="60" cy="64" r="3" fill="#3D2412"/>
+        </svg>
+      </div>
+      <p class="gate-eyebrow">Princess Day</p>
+      <h1 class="gate-title">For the Princess</h1>
+      <p class="gate-from">from a friend</p>
+      <form id="login-form" class="login-form" autocomplete="off">
+        <label class="sr-only" for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter the secret word" required />
+        <button type="submit">Open the letter</button>
+        <p id="login-error" class="login-error" hidden>Hmm, try again 🌻</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Letter -->
+  <main id="letter" class="letter" hidden>
+    <header class="hero">
+      <div class="floating-blooms" aria-hidden="true">
+        <span class="bloom b1">🌻</span>
+        <span class="bloom b2">🌻</span>
+        <span class="bloom b3">🌻</span>
+        <span class="bloom b4">🌻</span>
+        <span class="bloom b5">🌻</span>
+      </div>
+      <p class="hero-eyebrow">A little note for you</p>
+      <h1 class="hero-title">Hey Princess</h1>
+      <p class="hero-sub">Just a friend, showing up with sunflowers.</p>
+      <a class="scroll-cue" href="#chapter-1">Scroll gently ↓</a>
+    </header>
+
+    <section id="chapter-1" class="chapter">
+      <figure class="photo">
+        <img src="images/1.jpg" alt="Princess adjusting a helmet" loading="eager" />
+      </figure>
+      <div class="copy">
+        <span class="chapter-num">01</span>
+        <p>Hey Princess, I know its been hard and I don't know if I can make it easier or not for you. But I am here as a friend.</p>
+      </div>
+    </section>
+
+    <section id="chapter-2" class="chapter chapter-alt">
+      <figure class="photo">
+        <img src="images/3.jpg" alt="Princess smiling at a bar" loading="lazy" />
+      </figure>
+      <div class="copy">
+        <span class="chapter-num">02</span>
+        <p>The princess has a beautiful smile which should never fade, I will try my best for it.</p>
+      </div>
+    </section>
+
+    <section id="chapter-3" class="chapter">
+      <figure class="photo">
+        <img src="images/2.jpg" alt="Princess at the flower market" loading="lazy" />
+      </figure>
+      <div class="copy">
+        <span class="chapter-num">03</span>
+        <p>Best of luck for your exams Cutu P, jo aapka bura kare uski maa choood jaae xD. I hope you get everything that you wish for. Pareshan nai rehna. I am here if you want to rant, always "all ears" for you :)</p>
+      </div>
+    </section>
+
+    <footer class="closing">
+      <div class="closing-sunflower" aria-hidden="true">🌻</div>
+      <p class="closing-line">Always here.</p>
+      <p class="closing-from">— a friend</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
